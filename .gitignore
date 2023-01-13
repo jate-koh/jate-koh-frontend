@@ -1,0 +1,10 @@
+# Folders
+node_modules/
+.vscode/
+dist/
+
+# Logs
+npm-error.log*
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
