@@ -1,0 +1,15 @@
+# Folder
+node_modules/
+
+# Config
+.eslintrc.js
+.eslintignore
+.gitignore
+
+# Document
+*.md
+LICENSE
+
+# Package
+yarn.lock
+package.json
