@@ -5,5 +5,5 @@
       "moduleResolution": "node",
       "allowSyntheticDefaultImports": true
     },
-    "include": ["babel.config.ts"]
+    "include": ["vite.config.ts"]
 }
