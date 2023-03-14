@@ -11,8 +11,11 @@ function NavigationBar() {
                 <div className="flex-none">
                     <NavLogo />
                 </div>
-                <div className="flex-none">
+                <div className="lg:block hidden flex-none">
                     <NavContent />
+                </div>
+                <div className="sm:hidden">
+                    Dropdown
                 </div>
             </div>
         </nav>

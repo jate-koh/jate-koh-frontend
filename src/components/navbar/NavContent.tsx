@@ -10,10 +10,16 @@ export function NavContent() {
                 <NavButton href="#" margin="m-6" hoverColor="text-orange-600" hoverScale="125">
                     Files
                 </NavButton>
-                <NavButton href="/contact" margin="m-6" hoverColor="text-yellow-600" hoverScale="125">
+                <NavButton href="/contact" margin="m-6" hoverColor="text-amber-300" hoverScale="125">
                     Contact
                 </NavButton>
             </ul>
         </div>
     );
 }
+
+/* <div className="transform transition duration-500 hover:cursor-pointer hover:text-amber-300">
+    <li>
+        <a></a>
+    </li>
+</div> */

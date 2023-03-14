@@ -7,7 +7,6 @@ type NavButtonProps = {
     hoverGrow?: string,
     hoverColor?: string,
     margin?: string,
-    onClick?: (event: MouseEvent) => void,
 }
 
 const navButtonClass = {
