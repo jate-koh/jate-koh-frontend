@@ -1,28 +1,28 @@
 module.exports = {
+    'root': true,
     'env': {
         'browser': true,
         'es6': true,
         'node': true,
-        'react-native/react-native': true,
     },
     'extends': ['eslint:recommended', 'plugin:react/recommended'],
     'globals': {
         'Atomics': 'readonly',
         'SharedArrayBuffer': 'readonly'
     },
-    'parser': '@babel/eslint-parser',
+    'parser': '@typescript-eslint/parser',
     'parserOptions': {
-        //'ecmaFeatures': { 'jsx': true },
-        //'ecmaVersion': 2018,
-        //'sourceType': 'module'
+        'ecmaFeatures': { 'jsx': true },
+        'ecmaVersion': 11,
+        'sourceType': 'module'
     },
-    'plugins': ['react', 'react-native'],
+    'plugins': ['react'],
     'rules': {
         // eslint:recommended rules
         'indent': ['warn', 4],
         'linebreak-style': 'off',
         'quotes': ['warn', 'single'],
-        'semi': ['error', 'always'],
+        'semi': ['warn', 'always'],
         'eqeqeq': 'off',
         'spaced-comment': 'off',
         'no-unused-vars': 'warn',
@@ -40,4 +40,4 @@ module.exports = {
         'react/no-unescaped-entities': 'off'
 
     }
-}
+};
