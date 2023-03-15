@@ -1,0 +1,29 @@
+
+export function NavLogoWord() {
+    <>    
+        <span>
+            J
+        </span>
+        <span>
+            a
+        </span>
+        <span>
+            t
+        </span>
+        <span>
+            e
+        </span>
+        <span>
+            -
+        </span>
+        <span>
+            K
+        </span>
+        <span>
+            o
+        </span>
+        <span>
+            h
+        </span>
+    </>
+}
