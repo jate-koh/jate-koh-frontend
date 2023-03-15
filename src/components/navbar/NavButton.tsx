@@ -1,4 +1,4 @@
-import { joinClassNames } from "@/utils/String";
+import { joinClassNames } from '@/utils/String';
 
 type NavButtonProps = {
     children: string | JSX.Element | JSX.Element[],
@@ -10,8 +10,8 @@ type NavButtonProps = {
 }
 
 const navButtonClass = {
-    common: "transform transition duration-500 hover:cursor-pointer",
-}
+    common: 'transform transition duration-500 hover:cursor-pointer',
+};
 
 export function NavButton({ children, href, hoverScale, hoverGrow, hoverColor, margin }: NavButtonProps ) {
     return (

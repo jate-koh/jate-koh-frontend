@@ -1,14 +1,14 @@
 
-import NavigationBar from "@/components/navbar/Navbar";
+import NavigationBar from '@/components/navbar/Navbar';
 
 export function ContactPage() {
-  return (
-    <div>
-        <NavigationBar />
+    return (
         <div>
-            <h1>Contact Page</h1>   
+            <NavigationBar />
+            <div>
+                <h1>Contact Page</h1>   
+            </div>
         </div>
-    </div>
-  );
+    );
 }
 

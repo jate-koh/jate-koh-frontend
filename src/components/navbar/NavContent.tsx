@@ -1,4 +1,4 @@
-import { NavButton } from "@/components/navbar/NavButton";
+import { NavButton } from '@/components/navbar/NavButton';
 
 export function NavContent() {
     return(
@@ -18,8 +18,10 @@ export function NavContent() {
     );
 }
 
-/* <div className="transform transition duration-500 hover:cursor-pointer hover:text-amber-300">
-    <li>
-        <a></a>
-    </li>
-</div> */
+/* 
+    <div className="transform transition duration-500 hover:cursor-pointer hover:scale-125 hover:text-orange-600">
+        <li>
+            <a></a>
+        </li>
+    </div> 
+*/

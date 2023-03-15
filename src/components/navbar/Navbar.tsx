@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import { NavLogo } from "@/components/navbar/NavLogo";
-import { NavContent } from "@/components/navbar/NavContent";
+import { NavLogo } from '@/components/navbar/NavLogo';
+import { NavContent } from '@/components/navbar/NavContent';
 
 function NavigationBar() {
 
