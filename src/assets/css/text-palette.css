@@ -1,0 +1,24 @@
+
+.dashie-sky {
+    @apply text-cyan-500;
+}
+
+.dashie-purple {
+    @apply text-purple-600;
+}
+
+.dashie-green {
+    @apply text-green-600;
+}
+
+.dashie-red {
+    @apply text-red-600;
+}
+
+.dashie-orange {
+    @apply text-orange-600;
+}
+
+.dashie-amber {
+    @apply text-amber-300;
+}
