@@ -7,7 +7,7 @@ type ButtonProps = {
     disabled?: boolean,
     hoverScale?: string,
     hoverGrow?: string,
-    hoverColor?: string,
+    className?: string,
     onClick?: () => void,
 };
 
@@ -18,7 +18,7 @@ const buttonClass = {
 export function Button({ 
     children, color, active, 
     disabled, hoverScale, hoverGrow, 
-    hoverColor, onClick }: ButtonProps ) 
+    className, onClick }: ButtonProps ) 
 {
 
     return(
