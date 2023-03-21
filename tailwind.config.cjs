@@ -1,6 +1,11 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
-const flowbite = require('flowbite/plugin');
 const tailwindcss = require('tailwindcss');
+const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultColor = require('tailwindcss/colors');
+const flowbite = require('flowbite/plugin');
+
+const tailwindSafelist = [
+  'dashie-red', 'dashie-amber', 'dashie-orange'
+];
 
 /** @type {import('tailwindcss').Config} */
 
@@ -9,11 +14,11 @@ module.exports = {
     content: [
       './index.html',
       './src/**/*.{ts,tsx}',
-      './src/components/**/*.{ts,tsx}',
-      './src/pages/**/*.{tsx,ts}',
-      'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
     ],
-
+    options: {
+      safelist: tailwindSafelist,
+    },
+        
     darkMode: 'class',
     theme: {
       container: {
@@ -21,13 +26,15 @@ module.exports = {
         padding: '2rem',
       },
       extend: { 
+        colors: {
+          ...defaultColor,
+        },
         fontFamily: {
         sans: ['Inter', 'Sarabun', ...defaultTheme.fontFamily.sans],
       },
     },
     plugins: [
-      tailwindcss('./tailwind.config.cjs'),
-      flowbite,
+      tailwindcss,
     ],
   }
 }
