@@ -1,9 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Sarabun:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Inter:wght@300;400;500;700&display=swap");
 
-@import './css/main.css';
-@import './css/text-palette.css';
+@import 'tailwindcss/base';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import './css/main.css';
+
+@import 'tailwindcss/components';
+
+@import './css/common.css';
+@import './css/color.css';
+@import './css/animation.css';
+
+
+@import 'tailwindcss/utilities';
