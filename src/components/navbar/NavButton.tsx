@@ -5,7 +5,7 @@ type NavButtonProps = {
     href?: string,
     hoverScale?: string,
     hoverGrow?: string,
-    hoverColor?: string,
+    className?: string,
     margin?: string,
 }
 
@@ -13,13 +13,13 @@ const navButtonClass = {
     common: 'transform transition duration-500 hover:cursor-pointer',
 };
 
-export function NavButton({ children, href, hoverScale, hoverGrow, hoverColor, margin }: NavButtonProps ) {
+export function NavButton({ children, href, hoverScale, hoverGrow, className, margin }: NavButtonProps ) {
     return (
         <div className={joinClassNames(
             navButtonClass.common,
-            hoverColor && `hover:${hoverColor}`,
-            hoverScale && `hover:scale-${hoverScale}`,
-            hoverGrow && `hover:grow-${hoverGrow}`
+            className && `${className}`,
+            hoverScale && `hover:${hoverScale}`,
+            hoverGrow && `hover:${hoverGrow}`
         )}>
             <li className={joinClassNames(margin && `${margin}`)}>
                 <a  href={href} 
