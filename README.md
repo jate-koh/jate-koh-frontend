@@ -1,8 +1,8 @@
-# ✨ Jate Koh Personal Webpage
+# ✨ Jate Koh's Frontend
 
 ### 📖 Description
 
-For my personal usage, of course...
+Personal website's frontend. This is where I put all my frontend code for my personal website. Created for the purpose of learning web development, and to showcase my work.
 
 For now, it's really serve no true purpose whatsoever, other than be a place to show others *my noob and non-existent web dev skillz*, and possibly embarass myself at the same time...
 
