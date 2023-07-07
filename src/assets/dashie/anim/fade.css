@@ -1,0 +1,92 @@
+
+@layer components {
+
+    .anim-fade-float-in-base {
+        animation: fade-in ease, float-in ease;
+    }
+
+    .anim-fade-float-in {
+        @apply anim-fade-float-in-base;
+        animation-duration: 2s, 0.5s;
+    }
+
+    .anim-fade-float-in-\[1\] {
+        @apply anim-fade-float-in-base;
+        animation-duration: 2s, 1s;
+    }
+
+    .anim-fade-float-in-\[1\.5\] {
+        @apply anim-fade-float-in-base;
+        animation-duration: 2s, 1.5s;
+    }
+
+    .anim-fade-float-in-\[2\] {
+        @apply anim-fade-float-in-base;
+        animation-duration: 2s, 2s;
+    }
+
+    .anim-fade-float-in-\[2\.5\] {
+        @apply anim-fade-float-in-base;
+        animation-duration: 2s, 2.5s;
+    }
+
+    .anim-fade-float-in-\[3\] {
+        @apply anim-fade-float-in-base;
+        animation-duration: 2s, 3s;
+    }
+
+    .anim-float-in-base {
+        animation: float-in ease-in-out;
+    }
+
+    .anim-float-in {
+        @apply anim-float-in-base;
+        animation-duration: 0.5s;
+    }
+
+    .anim-float-in-\[1\] {
+        @apply anim-float-in-base;
+        animation-duration: 1s;
+    }
+
+    .anim-float-in-\[2\] {
+        @apply anim-float-in-base;
+        animation-duration: 2s;
+    }
+
+    .anim-fade-in-base {
+        animation: fade-in ease-in-out;
+    }
+
+    .anim-fade-in {
+        @apply anim-fade-in-base;
+        animation-duration: 0.5s;
+    }
+
+    .anim-fade-in-\[1\] {
+        @apply anim-fade-in-base;
+        animation-duration: 1s;
+    }
+
+    @keyframes float-in {
+        from {
+            transform: translateY(256px);
+        }
+
+        to {
+            transform: translateY(0px);
+        }
+    }
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            transform: opacity(1); 
+        }
+    }
+
+
+}

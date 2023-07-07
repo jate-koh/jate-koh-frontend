@@ -1,0 +1,119 @@
+
+@layer components {
+    
+    .anim-width-grow-base {
+        animation: width-grow ease-in-out forwards;
+    }
+
+    .anim-width-grow {
+        @apply anim-width-grow-base;
+        animation-duration: 0.5s;
+    }
+
+    .anim-width-grow\[1\] {
+        @apply anim-width-grow-base;
+        animation-duration: 1s;
+    }
+
+    .anim-width-grow\[2\] {
+        @apply anim-width-grow-base;
+        animation-duration: 2s;
+    }
+
+    .anim-width-shrink-base {
+        animation: width-shrink ease-in-out forwards;
+    }
+
+    .anim-width-shrink {
+        @apply anim-width-shrink-base;
+        animation-duration: 0.5s;
+    }
+
+    .anim-width-shrink\[1\] {
+        @apply anim-width-shrink-base;
+        animation-duration: 1s;
+    }
+
+    .anim-width-shrink\[2\] {
+        @apply anim-width-shrink-base;
+        animation-duration: 2s;
+    }
+
+    .anim-height-grow-base {
+        animation: height-grow ease-in-out forwards;
+    }
+
+    .anim-height-grow {
+        @apply anim-height-grow-base;
+        animation-duration: 0.5s;
+    }
+
+    .anim-height-grow\[1\] {
+        @apply anim-height-grow-base;
+        animation-duration: 1s;
+    }
+
+    .anim-height-grow\[2\] {
+        @apply anim-height-grow-base;
+        animation-duration: 2s;
+    }
+
+    .anim-height-shrink-base {
+        animation: height-shrink 0.5s ease-in-out forwards;
+    }
+
+    .anim-height-shrink {
+        @apply anim-height-shrink-base;
+        animation-duration: 0.5s;
+    }
+
+    .anim-height-shrink\[1\] {
+        @apply anim-height-shrink-base;
+        animation-duration: 1s;
+    }
+
+    .anim-height-shrink\[2\] {
+        @apply anim-height-shrink-base;
+        animation-duration: 2s;
+    }
+
+    @keyframes width-grow {
+        from {
+            width: 0%;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+    
+    @keyframes width-shrink {
+        from {
+            width: 100%;
+        }
+
+        to {
+            width: 0%;
+        }
+    }
+
+    @keyframes height-grow {
+        from {
+            height: 0%;
+        }
+
+        to {
+            height: 100%;
+        }
+    }
+
+    @keyframes height-shrink {
+        from {
+            height: 100%;
+        }
+
+        to {
+            height: 0%;
+        }
+    }
+}
