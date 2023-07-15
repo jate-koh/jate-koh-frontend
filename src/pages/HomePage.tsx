@@ -8,19 +8,19 @@ export function HomePage() {
             <NavigationBar />
             <div className='mt-10 relative flex flex-row flex-wrap gap-2 justify-center'>
                 
-                <Box colorSet='primary' basis='basis-1/4' className='animate-fade-float-in'>
+                <Box basis='basis-1/4' className='dash-box-[1] animate'>
                     <h1 className='dashie-red text-3xl'>01</h1>
                 </Box>
 
-                <Box colorSet='secondary' basis='basis-1/2' className='animate-fade-float-in-1'>
+                <Box basis='basis-1/2' className='anim-fade-float-in-[1.5]'>
                     <h1 className='dashie-red text-3xl'>02</h1>
                 </Box>
 
-                <Box colorSet='tertiary' basis='basis-1/4' className='animate-fade-float-in-2'>
+                <Box basis='basis-1/4' className='anim-fade-float-in-[1]'>
                     <h1 className='dashie-red text-3xl'>03</h1>
                 </Box>
 
-                <Box colorSet='quaternary' basis='basis-1/3' className='animate-fade-float-in-1'>
+                <Box basis='basis-1/3' className='anim-fade-float-in-[1.5]'>
                     <h1 className='dashie-red text-3xl'>04</h1>
                 </Box>
 

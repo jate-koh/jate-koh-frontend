@@ -4,7 +4,7 @@ import { RainbowLogoWord } from '@/components/navbar/RainbowLogoWord';
 export function NavLogo() {
     return (
         <div className='flex flex-row items-center justify-center transform transition duration-500 hover:cursor-pointer hover:scale-105'>
-            <div className='flex-none transform transition duration-500 hover:scale-125 hover:-translate-x-2 hover:translate-y-2'>
+            <div className='flex-none transform transition duration-500 hover:scale-105 hover:-translate-x-1 hover:translate-y-1'>
                 <a href='/'>
                     <img src='/dashie1.png' alt='Dashie Logo' className='w-13 h-24'/>
                 </a>
@@ -16,8 +16,8 @@ export function NavLogo() {
                         'hover:dashie-green', 'hover:dashie-sky', 'hover:dashie-purple', 
                         'hover:dashie-orange', 'hover:dashie-amber', 'hover:dashie-green',
                     ]}
-                    hoverScale='scale-125'
-                    className='transition duration-500 hover:translate-x-5 text-3xl font-semibold'
+                    hoverScale='scale-105'
+                    className='transition duration-500 text-3xl hover:translate-x-1 hover:translate-y-1 font-semibold'
                 >
                     J/a/t/e/-/K/o/h
                 </RainbowLogoWord>

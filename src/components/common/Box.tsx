@@ -2,30 +2,26 @@ import { joinClassNames } from "@/utils/String";
 
 type BoxProps = {
     children: string | JSX.Element | JSX.Element[],
-    colorSet?: 'primary' | 'secondary' | 'tertiary' | 'quaternary',
     basis?: string,
     className?: string,
     onClick?: () => void,
 };
 
+type State = {
+    initAnim: boolean,
+    isHovered: boolean,
+}
+
 const boxClass = {
-    base: `inline-flex items-center justify-center
-        hover:ring-blue-500
-        hover:ring-2`,
-    colorSet: {
-        primary: 'main-box-b1',
-        secondary: 'main-box-b2',
-        tertiary: 'main-box-b3',
-        quaternary: 'main-box-b4',
-    },
+    base: 'inline-flex items-center justify-center',
 };
 
-export function Box({ children, colorSet, basis, className, onClick }: BoxProps) {
+export function Box({ children, basis, className, onClick }: BoxProps) {
+
     return (
         <div
             className={joinClassNames(
                 boxClass.base,
-                colorSet && `${boxClass.colorSet[colorSet]}`,
                 basis && `${basis}`,
                 className && `${className}`
             )}
