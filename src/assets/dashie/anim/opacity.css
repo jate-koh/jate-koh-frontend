@@ -1,0 +1,26 @@
+
+@layer components {
+
+    .increase-opacity {
+        animation: increase-opacity ease-in-out forwards;
+        animation-duration: 0.5s;
+    }
+
+    .decrease-opacity {
+        animation: decrease-opacity ease-in-out forwards;
+        animation-duration: 0.5s;
+    }
+
+    @keyframes increase-opacity {
+        to {
+            opacity: 100%;
+        }
+    }
+
+    @keyframes decrease-opacity {
+        to {
+            opacity: 50%;
+        }
+    }
+
+}

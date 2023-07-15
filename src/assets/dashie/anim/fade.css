@@ -2,7 +2,7 @@
 @layer components {
 
     .anim-fade-float-in-base {
-        animation: fade-in ease, float-in ease;
+        animation: fade-in ease forwards, float-in ease forwards;
     }
 
     .anim-fade-float-in {
